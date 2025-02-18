@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .header{
+            height:50px;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:space-between;
+
+        }
+        ul{
+            display:flex;
+            list-style-type:none;
+            gap:10px;
+            flex-wrap:wrap;
+        }
+        .icon_area{
+            margin-left:10px;
+            display:flex;
+            align-items:center;
+            flex-wrap:wrap;
+            gap:10px;
+        }
+        .icon_name{
+            font-weight:bolder;
+        }
+        .menu_area{
+            margin-right:10px;
+        }
+        li{
+            padding:5px;
+            border-radius:2px;
+            transition:transform 0.5s,background-color 0.5s;
+        }
+        li:hover{
+            transform:scale(1.1);
+            background-color:aliceblue;
+            border-bottom:2px solid black;
+            cursor:pointer;
+        }
+        .main_content{
+            background-image:url("home1.jpeg");
+            height:500px;
+            background-size:cover;
+            background-repeat:no-repeat;
+            text-align:center;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            flex-wrap:wrap;
+        }
+        .services{
+            display:flex;
+            flex-wrap:wrap;
+            width:100%;
+            justify-content:space-evenly;
+            margin-top:20px;
+        }
+        .services_headline{
+            text-align:center;
+        }
+        .card1,.card2,.card3,.img1,.img2,.img3{
+            max-width:300px;
+            border:1px solid black;
+            text-align:center;
+            border-radius:5px;
+        }
+        .about_us{
+            margin-top:20px;
+            padding:40px;
+            display:flex;
+            gap:10px;
+            background-color:aliceblue;
+        }
+        .side_img{
+            max-width:400px;
+            margin-left:70px;
+        }
+        .side_text{
+            max-width:500px;
+            text-align:justify;
+            margin-left:60px;
+        }
+        .g1,.g2,.g3,.g4,.g5,.g6{
+            max-width:425px;
+            cursor:pointer;
+            transition:transform 1s;
+        }
+        .g1:hover,.g2:hover,.g3:hover,.g4:hover,.g5:hover,.g6:hover{
+            transform:scale(1.1)
+        }
+        .gallery_text{
+            text-align:center;
+        }
+        .footer{
+            text-align:center;
+            background-color: rgb(54,28,28);
+            color:white;
+            padding:10px;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .address{
+            margin-left:90px;
+        }
+        .contact{
+            margin-right:90px;
+        }
+        @media only screen and(max-width:700px){
+            .gallery{
+                display:flex;
+                justify-content:center;
+                flex-wrap:wrap;
+            }
+            .side_text{
+                padding:10px;
+            }
+            .card1,.card2,.card3{
+                margin-bottom:10px;
+            }
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon_area">
+                <img src="icon.png" class="icon" width="25px">
+                <span class="icon_name">Travel</span>
+             </div>
+            <div class="menu_area">
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>About us</li>
+                    <li>Gallery</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="main_content">
+              <h2>Travel with Love and with no Limits</h2>
+              <p>Let us take you on a journey where adventure meets comfort..your dream vacation starts here!</p>
+            </div>
+            
+            
+                <div class="services_headline">
+                    <h1>Our Services</h1>
+                </div>
+            <div class="services">
+              <div class="card1">
+                <img src="card1.jpeg" class="img1">
+                <p>Travel with all the freness</p>
+              </div>
+              <div class="card2">
+                <img src="card.jpeg" class="img2">
+                <p>We will provide 24/7 services</p>
+              </div>
+              <div class="card3"> 
+                <img src="card3.jpeg" class="img3">
+                <p>Travel with affordable prices</p>
+              </div>
+            </div>
+            <div class="about_us">
+                <img src="about.jpeg" class="side_img">
+                <div class="side_text">
+                    <h1>About Us</h1>
+                    <p>Welcome to Travel to your ultimate partner in exploring the world! With a passion for travel and a commitment to exceptional service, we specialize in crafting unforgettable experiences tailored just for you. Our team of seasoned travel experts brings a wealth of knownledge and personal touch to every journey we design. From exotic gateways and cultural adventures to relaxing retreats and family vacations, we handle all the details so you can focus on making memories. Our mission is to provide outstanding service and create experiences that exceed your expections. whether you're planning a romantic escape, a thrilling adventure, or a peaceful retreat,we're here to guide you every step of the way. Join us in exploring the world with confidence amd excitement. Let our travel agency be your gateway to extraordinary travel experiences!</p>
+                </div>
+            </div>
+            <div class="gallery">
+            <h2 class="gallery_text">Our Gallery</h2>
+            <img src="g6.jpeg" class="g1">
+            <img src="g2.webp" class="g2">
+            <img src="g3.jpeg" class="g3">
+            <img src="g5.jpeg" class="g4">
+            <img src="g4.jpeg" class="g5">
+            <img src="g1.jpeg" class="g6">
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="address">
+                Maddhilapalem<br>
+                Visakhapatnam<br>
+                Andhra Pradesh
+            </div>
+            <div class="contact">
+                <p>Travel@gamil.com<p></p>
+                <p>+911804397833</p> 
+                <p>@2025</p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
